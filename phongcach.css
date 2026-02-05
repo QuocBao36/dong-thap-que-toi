@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+.header {
+    background: linear-gradient(135deg, #FE73DB 0%, #EB35BE 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                 url(hinhanh/bg.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #FE73DB;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #EB35BE;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background-color: #EBA4C2;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.feature-card a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.feature-card a:hover {
+    color: #764ba2;
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+/* News-image */
+.news-image {
+    height: 200px;
+    background: 
+}
+.news-image1 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/khkt-dongthap.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.news-image2 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/giaothong-dongthap.png");
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+}
+.news-image3 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/hoa-dongthap.webp");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.news-image4 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/tetduonglich-dongthap.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.news-image5 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/petrolimex-dongthap.webp");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.news-image6 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/tin-tuc/hesinhthai-dongthap.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+.news-content {
+    padding: 1.5rem;
+}
+
+.news-date {
+    color: #667eea;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.news-card h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.news-card p {
+    color: #666;
+    margin: 1rem 0;
+}
+
+.read-more {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #764ba2;
+}
+
+/* Content Page Styles */
+.page-header1 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("hinhanh/slidebg/slide1.jpg");
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+}  
+.page-header2 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("hinhanh/slidebg/slide2.jpeg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+.page-header3 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("hinhanh/slidebg/slide3.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+}  
+.page-header4 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("hinhanh/slidebg/slide4.jpg");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+}  
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-section {
+    padding: 3rem 0;
+    background: white;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-wrapper h2 {
+    color: #667eea;
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+.content-wrapper p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.info-box {
+    background: #f0f4ff;
+    padding: 1.5rem;
+    border-left: 4px solid #667eea;
+    margin: 2rem 0;
+    border-radius: 5px;
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.attraction-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.attraction-image1 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/diem-den-noi-bat/dithichlichsu.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+.attraction-image2 {
+    height: 200px;
+    background:
+       
+        url("hinhanh/diem-den-noi-bat/khudulichsinhthai.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+.attraction-image3 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/diem-den-noi-bat/chotruyenthong.jpg");
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+.attraction-image4 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/diem-den-noi-bat/langnghethucong.jpg");
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+.attraction-image5 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/diem-den-noi-bat/khuvuichoigiaitri.jpg");
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+.attraction-image6 {
+    height: 200px;
+    background:
+        
+        url("hinhanh/diem-den-noi-bat/vuonquocgia.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+
+.attraction-info {
+    padding: 1.5rem;
+}
+
+.attraction-info h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.attraction-info p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    color: #bbb;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .feature-grid,
+    .news-grid,
+    .attraction-grid {
+        grid-template-columns: 1fr;
+    }
+}
